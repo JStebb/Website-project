@@ -1,3 +1,4 @@
+
 /* === General Reset === */
 * {
     margin: 0;
@@ -9,14 +10,14 @@
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f0f2f5;
+    background-color: #c5cdb6;
     color: #333;
     padding: 20px;
   }
   
   /* === Header Section === */
   header {
-    background-color: #ffffff;
+    background-color: #e4e7dc;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -44,10 +45,10 @@
   /* === Right Sidebar: Games === */
   aside {
     flex: 1;
-    background-color: #ffffff;
+    background-color: #e4e7dc;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     float: right;
     width: 40%
   }
@@ -62,20 +63,20 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 10px;
-    background-color: #f8f8f8;
+    margin-bottom: 25px;
+    background-color: #c5cdb6;
     padding: 10px;
     border-radius: 8px;
     transition: background-color 0.2s;
   }
   
   .game:hover {
-    background-color: #e4e4e4;
+    background-color: #a52929;
   }
   
   /* Game image */
   .game img {
-    width: 60px;
+    width: 150px;
     height: auto;
     border-radius: 6px;
   }
@@ -86,7 +87,11 @@
     color: #222;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+    transition: ease 0.2s;
+  }
+  .game a:hover {
+    color: #e4e7dc;
   }
   
   .game p {
@@ -96,10 +101,10 @@
   
   /* === Course and Interests Sections === */
   .courses, .interests-and-skill {
-    background-color: #ffffff;
+    background-color: #e4e7dc;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
     margin-bottom: 20px;
   }
   
