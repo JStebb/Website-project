@@ -1,0 +1,132 @@
+/* === General Reset === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* === Body Styles === */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f2f5;
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* === Header Section === */
+  header {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  /* === Main Layout === */
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    width: 58%;
+  }
+  
+  /* === Left Column: Courses and Interests === */
+  .main-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* === Right Sidebar: Games === */
+  aside {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    float: right;
+    width: 40%
+  }
+  
+  #games > p {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* Each game block */
+  .game {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+  }
+  
+  .game:hover {
+    background-color: #e4e4e4;
+  }
+  
+  /* Game image */
+  .game img {
+    width: 60px;
+    height: auto;
+    border-radius: 6px;
+  }
+  
+  /* Game link and name */
+  .game a {
+    text-decoration: none;
+    color: #222;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .game p {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  /* === Course and Interests Sections === */
+  .courses, .interests-and-skill {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+  
+  .courses ul, .interests-and-skill ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .courses li, .interests-and-skill li {
+    margin-bottom: 5px;
+  }
+  
+  a {
+    color: #007acc;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+  
+    aside {
+      order: 1; /* put the games sidebar below the main content on mobile */
+    }
+  }
