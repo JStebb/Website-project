@@ -132,7 +132,7 @@
     }
   
     aside {
-      order: 1; /* put the games sidebar below the main content on mobile */
+      order: 1; /* this should put the gaming sidebar below the main content on mobile, it doesn't tho */
     }
   }
 
