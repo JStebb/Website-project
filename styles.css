@@ -21,7 +21,7 @@
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 1px 6px 10px #a52929b0;
     text-align: center;
   }
   
@@ -48,7 +48,7 @@
     background-color: #e4e7dc;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 1px 6px 10px #a52929b0;
     float: right;
     width: 40%
   }
@@ -104,7 +104,7 @@
     background-color: #e4e7dc;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    box-shadow: 1px 6px 10px #a52929b0;
     margin-bottom: 20px;
   }
   
@@ -134,4 +134,22 @@
     aside {
       order: 1; /* put the games sidebar below the main content on mobile */
     }
+  }
+
+  form {
+    margin-top: 20px;
+    background-color: #e4e7dc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 6px 10px #a52929b0;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    margin-top: 20px;
+    background-color: #e4e7dc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 6px 10px  #a52929b0;
+    margin-bottom: 20px;
   }
