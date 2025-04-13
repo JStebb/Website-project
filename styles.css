@@ -1,21 +1,25 @@
 
-/* === General Reset === */
+/* === general reset === */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+  /* === scroll smoothing for clicking links === */
+  html {
+    scroll-behavior: smooth;
+  }
   
-  /* === Body Styles === */
+  /* === body styles === */
   body {
-    font-family: Arial, sans-serif;
+    font-family: Tahoma, sans-serif;
     line-height: 1.6;
     background-color: #c5cdb6;
-    color: #333;
+    color: #272525;
     padding: 20px;
   }
   
-  /* === Header Section === */
+  /* === header section === */
   header {
     background-color: #e4e7dc;
     padding: 20px;
@@ -25,7 +29,7 @@
     text-align: center;
   }
   
-  /* === Main Layout === */
+  /* === main layout === */
   main {
     display: flex;
     justify-content: space-between;
@@ -34,7 +38,7 @@
     width: 58%;
   }
   
-  /* === Left Column: Courses and Interests === */
+  /* === left column: courses and interests === */
   .main-content {
     flex: 2;
     display: flex;
@@ -42,7 +46,7 @@
     gap: 20px;
   }
   
-  /* === Right Sidebar: Games === */
+  /* === right sidebar: games === */
   aside {
     flex: 1;
     background-color: #e4e7dc;
@@ -57,8 +61,11 @@
     margin-bottom: 10px;
     font-weight: bold;
   }
+  .gamesheader {
+    margin-bottom: 10px;
+  }
   
-  /* Each game block */
+  /* each game block */
   .game {
     display: flex;
     align-items: center;
@@ -74,14 +81,14 @@
     background-color: #a52929;
   }
   
-  /* Game image */
+  /* game imgs */
   .game img {
-    width: 150px;
+    width: 200px;
     height: auto;
     border-radius: 6px;
   }
   
-  /* Game link and name */
+  /* game links and names */
   .game a {
     text-decoration: none;
     color: #222;
@@ -99,7 +106,7 @@
     font-weight: bold;
   }
   
-  /* === Course and Interests Sections === */
+  /* === course and interests sections === */
   .courses, .interests-and-skill {
     background-color: #e4e7dc;
     padding: 20px;
@@ -132,7 +139,7 @@
     }
   
     aside {
-      order: 1; /* this should put the gaming sidebar below the main content on mobile, it doesn't tho */
+      order: 1; /* this should put the gaming sidebar below the main content on mobile, it doesn't tho lol */
     }
   }
 
@@ -153,3 +160,49 @@
     box-shadow: 1px 6px 10px  #a52929b0;
     margin-bottom: 20px;
   }
+
+/* === page 2 styles === */
+
+.content-column {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.topic-block {
+  background-color: #e4e7dc;
+  padding: 2rem;
+  border-radius: 8px;
+  transition: background-color 0.6s ease;
+  margin-bottom: 1rem;
+  scroll-margin-top: 2rem;
+  box-shadow: 1px 6px 10px #a52929b0;
+}
+
+.topic-block h3,
+.topic-block li {
+  transition: color 0.6s ease;
+}
+
+/* hover effect */
+.topic-block:hover {
+  background-color: #a52929;
+}
+
+.topic-block:hover h3,
+.topic-block:hover li {
+  color: #e4e7dc;
+}
+
+/* JS target highlight effect */
+.topic-block.highlight {
+  background-color: #a52929;
+}
+
+.topic-block.highlight h3,
+.topic-block.highlight li {
+  color: #e4e7dc;
+}

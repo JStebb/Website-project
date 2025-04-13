@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HTML Website Project Page 2 - Temp Name - CIS 1420</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="icon" type="image/png" href="mouse.png">
+    </head>
+
+    <body>
+        <main class="content-column">
+
+            
+            <section id="classes">
+              <h2>Classes</h2>
+            
+              <div class="topic-block" id="composition-i">
+                <h3>Composition I – ENG 1510</h3>
+                <ul>
+                  <li>This class allowed me to strengthen my writing skills, and enhanced my ability to convey complex ideas more effectively.</li>
+                </ul>
+              </div>
+              
+              <div class="topic-block" id="math-literacy">
+                <h3>Math Literacy – MAT 1125</h3>
+                <ul>
+                  <li>After being out of school for a decade, this class was essential to reconfigure my brain for mathematics.</li>
+                  <li>Unfortunately, I needed to take Elementary Algebra to be on the STEM math route, and that class is no longer offered for most Community Colleges, so I'll be forced to retake the placement exam to enter Intermediate Algebra.</li>
+                </ul>
+              </div>
+          
+              <div class="topic-block" id="html5-programming">
+                <h3>HTML5 Programming – CIS 1420</h3>
+                <ul>
+                  <li>This class is providing the foundational skills I'll need to realize my computer science goals, and enhance the skills I'll apply towards my game development hobby.</li>
+                </ul>
+              </div>
+          
+              <div class="topic-block" id="introduction-to-film">
+                <h3>Introduction to Film – HUM 1900</h3>
+                <ul>
+                  <li>This class created valuable foundational knowledge on the production of Films, both historical and modern.</li>
+                  <li>Additionally it strengthened my ability to view media critically and analyze it effectively.</li>
+                </ul>
+              </div>
+            </section>
+
+            <section id="interests">
+                <h2>Interests</h2>
+            
+                <div class="topic-block" id="graphic-design">
+                  <h3>Graphic Design</h3>
+                  <ul>
+                    <li>I've previously taken classes for Graphic Design and Photoshop.</li>
+                    <li>Currently learning to use open source Photoshop alternatives like GIMP and Krita.</li>
+                  </ul>
+                </div>
+            
+                <div class="topic-block" id="game-development">
+                  <h3>Game Development</h3>
+                  <ul>
+                    <li>I frequent online spaces intended for amateur game developers and have dabbled in the creation of some games using fantasy consoles like PICO-8 and TIC-80, as well as the open source game engine Godot.</li>
+                  </ul>
+                </div>
+            
+                <div class="topic-block" id="open-source-software">
+                  <h3>Open Source Software</h3>
+                  <ul>
+                    <li>As an open source software advocate, I believe in the merits of simple software, open availability of tools, and general consumer freedom.</li>
+                  </ul>
+                </div>
+            
+                <div class="topic-block" id="cooking">
+                  <h3>Cooking</h3>
+                  <ul>
+                    <li>As a Chef for over 10 years I've learned effective team management, work ethic, hospitality, and how to craft professional quality dishes with pride.</li>
+                  </ul>
+                </div>
+            
+                <div class="topic-block" id="digital-audio-production">
+                  <h3>Digital Audio Production</h3>
+                  <ul>
+                    <li>Built foundational knowledge on the use of various Digital Audio Workstations, primarily LMMS.</li>
+                  </ul>
+                </div>
+            
+                <div class="topic-block" id="3d-modeling">
+                  <h3>3D Modeling</h3>
+                  <ul>
+                    <li>Built foundational knowledge in the use of the 3D modeling Software Blender.</li>
+                  </ul>
+                </div>
+            
+                <div class="topic-block" id="web-design">
+                  <h3>Web Design</h3>
+                  <ul>
+                    <li>This website marks my first foray into HTML and CSS development, with hopefully much more to come.</li>
+                  </ul>
+                </div>
+            
+                <div class="topic-block" id="programming-languages">
+                  <h3>JavaScript, Lua, Python</h3>
+                  <ul>
+                    <li>Learned to build JavaScript based programs through HTML class.</li>
+                    <li>Built foundational knowledge of Lua and Python programming languages through interest in amateur game development.</li>
+                  </ul>
+                </div>
+            
+                <div class="topic-block" id="film-video-production">
+                  <h3>Film and Video Production</h3>
+                  <ul>
+                    <li>Built foundational knowledge of Film and Video Production through Introduction to Film classes.</li>
+                  </ul>
+                </div>
+              </section>
+          
+          </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          // Wait until the entire page content has loaded
+        
+          const hash = window.location.hash; // Get the hash from the URL
+        
+          if (hash) {
+            // this finds the corresponding element
+            const target = document.querySelector(hash);
+        
+            if (target && target.classList.contains("topic-block")) {
+              target.classList.add("highlight"); // Apply the temporary highlight style
+            
+              // After 1.5 seconds, remove the highlight class so it fades back
+              setTimeout(() => {
+                target.classList.remove("highlight");
+              }, 1500);
+            }
+          }
+        });
+
+    </script>
+    </body>
+</html>
